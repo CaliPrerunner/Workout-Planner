@@ -13,16 +13,20 @@ public class main {
 
 
 
-food peach = new food("peach", 100, 100, 100 ,100 ,100 ,100, 100, 100, 100, 100, 100);
+food peach = new food("peach", 100, 100, 100 ,100 ,100 ,100, 100, 100, 100, 100, 100,1);
 LinkedList test = new LinkedList<food>();
 test.add(peach);
 day thurs = new day("thurs", "h", test);
+food t = (food) test.get(0);
+System.out.println("this is "+t.getCalories());
 
-        float u = 0;
- u = thurs.totalCaoloriesEaten();
- System.out.println(u);
+System.out.println("total calories: "+thurs.gettotalCaoloriesEaten());
+        food apple = new food("peach", 100, 100, 100 ,10 ,100 ,100, 100, 100, 100, 100, 100,1);
+        test.add(apple);
+        System.out.println("total calories again: "+thurs.gettotalCaoloriesEaten());
 
- //food class works
+
+        //food class works
 
 /*
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
