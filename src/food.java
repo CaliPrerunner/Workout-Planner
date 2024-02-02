@@ -19,7 +19,7 @@ public class food {
     public float getProtien(){return protien;}
     public float getTotalCarbs(){return totalCarbohydrates;}
     public float getFat(){return fat;}
-    public float getCalories(){return calories;}
+        public float getCalories(){return calories;}
     public int getBarCode(){return barCode;}
     public float getTotalSugars(){return totalsugars;}
     public float getFiber(){return fiber;}
@@ -35,6 +35,7 @@ public class food {
         if(ss != 100) {
                 this.name = n;
                 this.barCode = bc;
+
 
                 float factor = (ss / 100);
 
@@ -62,6 +63,7 @@ public class food {
                 this.sodium = sd;
                 this.addedSugars = as;
                 this.servingSize = ss;
+
         }
 
     }
